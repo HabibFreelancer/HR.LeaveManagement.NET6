@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using HR.LeaveManagement.Domain;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,5 +10,6 @@ namespace HR.LeaveManagement.Identity.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
     }
 }

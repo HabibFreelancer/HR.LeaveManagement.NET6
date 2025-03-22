@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+#nullable disable
+
 namespace HR.LeaveManagement.Identity.Migrations
 {
     [DbContext(typeof(LeaveManagementIdentityDbContext))]
@@ -15,9 +17,10 @@ namespace HR.LeaveManagement.Identity.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.8")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "6.0.4")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("HR.LeaveManagement.Identity.Models.ApplicationUser", b =>
                 {
@@ -87,14 +90,14 @@ namespace HR.LeaveManagement.Identity.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.ToTable("AspNetUsers");
+                    b.ToTable("AspNetUsers", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = "8e445865-a24d-4543-a6c6-9443d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d2cedf01-cee0-430a-b820-0c377b586c0a",
+                            ConcurrencyStamp = "c6df1b69-f638-472b-ad04-aaa9af9fbf84",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -102,9 +105,9 @@ namespace HR.LeaveManagement.Identity.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEN/+QPuA+uuzTXrdYR7YF0/+JPxiPmjUY/ukh+lBiXnLyMcVGwVaQDSrcginM2gbtA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEP+pMrZljjBw+Z9zr5ziULU00NFSzVYqxREIbpoQYS5PCEQePR9Hz3NBihrftl9Nyg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b0bc8cba-dbe5-49c1-b77c-108c1dcccacc",
+                            SecurityStamp = "9a6bae4e-f0cd-4770-af43-17b8d84866d9",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
@@ -112,7 +115,7 @@ namespace HR.LeaveManagement.Identity.Migrations
                         {
                             Id = "9e224968-33e4-4652-b7b7-8574d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "49ff2dd4-d01a-42bb-afb8-83202db83269",
+                            ConcurrencyStamp = "02622a25-6795-4f04-90de-286b0f440bf0",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -120,9 +123,9 @@ namespace HR.LeaveManagement.Identity.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEnH3am4iXtp/eOTCv2+/TfcX6lIU9iYzudCAZkuGPuPyHjO8/6+fUwUX0kZfjZj3A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBSZTz07fqf3sdpcK5rCfDWNUt/YlwiyWporkRNRu1qyrxY63IkgOFooDsTyohk94w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a039aaef-c811-4cc7-a4e3-42092c879d08",
+                            SecurityStamp = "9987bd3c-3048-4176-ba13-a59950d75a2f",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -152,20 +155,20 @@ namespace HR.LeaveManagement.Identity.Migrations
                         .HasDatabaseName("RoleNameIndex")
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
-                    b.ToTable("AspNetRoles");
+                    b.ToTable("AspNetRoles", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = "cac43a6e-f7bb-4448-baaf-1add431ccbbf",
-                            ConcurrencyStamp = "68bb5593-dfd4-4951-a3b0-5fe5788ebde4",
+                            ConcurrencyStamp = "c14d2f1f-1554-401d-bd65-d334a409e6ce",
                             Name = "Employee",
                             NormalizedName = "EMPLOYEE"
                         },
                         new
                         {
                             Id = "cbc43a8e-f7bb-4445-baaf-1add431ffbbf",
-                            ConcurrencyStamp = "d11f9641-113b-4d94-9505-35d91cc7f298",
+                            ConcurrencyStamp = "2e0834fd-43a2-4b94-a6a8-d7e1fe258db5",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -175,8 +178,9 @@ namespace HR.LeaveManagement.Identity.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -192,15 +196,16 @@ namespace HR.LeaveManagement.Identity.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetRoleClaims");
+                    b.ToTable("AspNetRoleClaims", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -216,7 +221,7 @@ namespace HR.LeaveManagement.Identity.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("AspNetUserClaims");
+                    b.ToTable("AspNetUserClaims", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
@@ -238,7 +243,7 @@ namespace HR.LeaveManagement.Identity.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("AspNetUserLogins");
+                    b.ToTable("AspNetUserLogins", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
@@ -253,7 +258,7 @@ namespace HR.LeaveManagement.Identity.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetUserRoles");
+                    b.ToTable("AspNetUserRoles", (string)null);
 
                     b.HasData(
                         new
@@ -284,7 +289,7 @@ namespace HR.LeaveManagement.Identity.Migrations
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
-                    b.ToTable("AspNetUserTokens");
+                    b.ToTable("AspNetUserTokens", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

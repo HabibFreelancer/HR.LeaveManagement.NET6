@@ -5,6 +5,7 @@ using HR.LeaveManagement.Identity.Configurations;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace HR.LeaveManagement.Identity
 {
     public class LeaveManagementIdentityDbContext : IdentityDbContext<ApplicationUser>
@@ -17,10 +18,10 @@ namespace HR.LeaveManagement.Identity
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+                       
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(LeaveManagementIdentityDbContext).Assembly);
 
-            modelBuilder.ApplyConfiguration(new RoleConfiguration());
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
-            modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
+
         }
     }
 }

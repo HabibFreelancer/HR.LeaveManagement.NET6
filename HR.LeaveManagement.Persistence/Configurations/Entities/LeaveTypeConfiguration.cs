@@ -11,20 +11,31 @@ namespace HR.LeaveManagement.Persistence.Configurations.Entities
     {
         public void Configure(EntityTypeBuilder<LeaveType> builder)
         {
-            ////builder.HasData(
-            ////    new LeaveType
-            ////    {
-            ////        Id = 1,
-            ////        DefaultDays = 10, 
-            ////        Name = "Vacation"
-            ////    },
-            ////    new LeaveType
-            ////    {
-            ////        Id = 2,
-            ////        DefaultDays = 12,
-            ////        Name = "Sick"
-            ////    }
-            ////);
+           
+            // Seed Leave Types
+            builder.HasData(
+                new LeaveType
+                {
+                    Id = 1,
+                    Name = "Annual Leave",
+                    DefaultDays = 20,
+                    DateCreated = DateTime.UtcNow,
+                    CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                    LastModifiedDate = DateTime.UtcNow,
+                    LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9"
+                },
+                new LeaveType
+                {
+                    Id = 2,
+                    Name = "Sick Leave",
+                    DefaultDays = 10,
+                    DateCreated = DateTime.UtcNow,
+                    CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                    LastModifiedDate = DateTime.UtcNow,
+                    LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9"
+                }
+            );
+
         }
     }
 }

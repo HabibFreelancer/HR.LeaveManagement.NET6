@@ -17,7 +17,7 @@ namespace HR.LeaveManagement.Persistence.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.2")
+                .HasAnnotation("ProductVersion", "6.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -31,18 +31,15 @@ namespace HR.LeaveManagement.Persistence.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("EmployeeId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("LastModifiedDate")
@@ -62,6 +59,56 @@ namespace HR.LeaveManagement.Persistence.Migrations
                     b.HasIndex("LeaveTypeId");
 
                     b.ToTable("LeaveAllocations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1315),
+                            EmployeeId = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1321),
+                            LeaveTypeId = 1,
+                            NumberOfDays = 20,
+                            Period = 2025
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1324),
+                            EmployeeId = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1325),
+                            LeaveTypeId = 2,
+                            NumberOfDays = 10,
+                            Period = 2025
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1326),
+                            EmployeeId = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1327),
+                            LeaveTypeId = 1,
+                            NumberOfDays = 20,
+                            Period = 2025
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1328),
+                            EmployeeId = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1328),
+                            LeaveTypeId = 2,
+                            NumberOfDays = 10,
+                            Period = 2025
+                        });
                 });
 
             modelBuilder.Entity("HR.LeaveManagement.Domain.LeaveRequest", b =>
@@ -79,7 +126,6 @@ namespace HR.LeaveManagement.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("DateActioned")
@@ -95,7 +141,6 @@ namespace HR.LeaveManagement.Persistence.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LastModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("LastModifiedDate")
@@ -105,11 +150,9 @@ namespace HR.LeaveManagement.Persistence.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("RequestComments")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RequestingEmployeeId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartDate")
@@ -120,6 +163,40 @@ namespace HR.LeaveManagement.Persistence.Migrations
                     b.HasIndex("LeaveTypeId");
 
                     b.ToTable("LeaveRequests");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Approved = true,
+                            Cancelled = false,
+                            CreatedBy = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1526),
+                            DateRequested = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1525),
+                            EndDate = new DateTime(2025, 4, 6, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1523),
+                            LastModifiedBy = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1527),
+                            LeaveTypeId = 1,
+                            RequestComments = "Family vacation",
+                            RequestingEmployeeId = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            StartDate = new DateTime(2025, 4, 1, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1518)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Approved = false,
+                            Cancelled = false,
+                            CreatedBy = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1531),
+                            DateRequested = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1529),
+                            EndDate = new DateTime(2025, 3, 28, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1528),
+                            LastModifiedBy = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1532),
+                            LeaveTypeId = 2,
+                            RequestComments = "Feeling unwell",
+                            RequestingEmployeeId = "9e224968-33e4-4652-b7b7-8574d048cdb9",
+                            StartDate = new DateTime(2025, 3, 27, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1528)
+                        });
                 });
 
             modelBuilder.Entity("HR.LeaveManagement.Domain.LeaveType", b =>
@@ -131,7 +208,6 @@ namespace HR.LeaveManagement.Persistence.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateCreated")
@@ -141,19 +217,39 @@ namespace HR.LeaveManagement.Persistence.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("LastModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("LastModifiedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("LeaveTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1632),
+                            DefaultDays = 20,
+                            LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1634),
+                            Name = "Annual Leave"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            DateCreated = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1635),
+                            DefaultDays = 10,
+                            LastModifiedBy = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            LastModifiedDate = new DateTime(2025, 3, 22, 5, 48, 2, 176, DateTimeKind.Utc).AddTicks(1636),
+                            Name = "Sick Leave"
+                        });
                 });
 
             modelBuilder.Entity("HR.LeaveManagement.Domain.LeaveAllocation", b =>

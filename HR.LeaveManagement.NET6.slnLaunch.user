@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Api And MVC application",
+    "Projects": [
+      {
+        "Path": "HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "HR.LeaveManagement.MVC\\HR.LeaveManagement.MVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
