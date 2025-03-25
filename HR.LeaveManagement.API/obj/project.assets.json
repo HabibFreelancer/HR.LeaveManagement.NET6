@@ -11855,9 +11855,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj",
+      "projectUniqueName": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj",
       "projectName": "HR.LeaveManagement.API",
-      "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj",
+      "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj",
       "packagesPath": "C:\\Users\\X280\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\obj\\",
       "projectStyle": "PackageReference",
@@ -11880,17 +11880,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj": {
-              "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj"
+            "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj"
             },
-            "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj": {
-              "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj"
+            "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj": {
+              "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj"
             },
-            "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Infrastructure\\HR.LeaveManagement.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Infrastructure\\HR.LeaveManagement.Infrastructure.csproj"
+            "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Infrastructure\\HR.LeaveManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Infrastructure\\HR.LeaveManagement.Infrastructure.csproj"
             },
-            "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Persistence\\HR.LeaveManagement.Persistence.csproj": {
-              "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Persistence\\HR.LeaveManagement.Persistence.csproj"
+            "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Persistence\\HR.LeaveManagement.Persistence.csproj": {
+              "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Persistence\\HR.LeaveManagement.Persistence.csproj"
             }
           }
         }

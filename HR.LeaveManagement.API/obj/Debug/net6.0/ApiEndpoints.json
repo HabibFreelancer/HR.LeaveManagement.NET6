@@ -52,6 +52,26 @@
     ]
   },
   {
+    "ContainingType": "HR.LeaveManagement.API.Controllers.EmployeesController",
+    "Method": "GetEmployees",
+    "RelativePath": "api/Employees/employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[HR.LeaveManagement.Application.Models.Identity.Employee, HR.LeaveManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "HR.LeaveManagement.Api.Controllers.LeaveAllocationsController",
     "Method": "Get",
     "RelativePath": "api/LeaveAllocations",

@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HR.LeaveManagement.MVC.80iq3pp2hm.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"80iq3pp2hm"},{"Name":"integrity","Value":"sha256-WCu4IHRfGVndENFLGOGZArQ6I8mSqMh90\u002B79v3JUAas="},{"Name":"label","Value":"_content/HR.LeaveManagement.MVC/HR.LeaveManagement.MVC.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WCu4IHRfGVndENFLGOGZArQ6I8mSqMh90\u002B79v3JUAas=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 05:25:45 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WCu4IHRfGVndENFLGOGZArQ6I8mSqMh90\u002B79v3JUAas=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 02:14:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HR.LeaveManagement.MVC/HR.LeaveManagement.MVC.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HR.LeaveManagement.MVC.80iq3pp2hm.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WCu4IHRfGVndENFLGOGZArQ6I8mSqMh90\u002B79v3JUAas="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WCu4IHRfGVndENFLGOGZArQ6I8mSqMh90\u002B79v3JUAas=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 05:25:45 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WCu4IHRfGVndENFLGOGZArQ6I8mSqMh90\u002B79v3JUAas=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 02:14:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HR.LeaveManagement.MVC/js/site.6b9nfc4n3r.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

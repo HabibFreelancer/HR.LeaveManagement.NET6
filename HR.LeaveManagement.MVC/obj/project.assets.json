@@ -9265,11 +9265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.MVC\\HR.LeaveManagement.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.MVC\\HR.LeaveManagement.MVC.csproj",
       "projectName": "HR.LeaveManagement.MVC",
-      "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.MVC\\HR.LeaveManagement.MVC.csproj",
+      "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.MVC\\HR.LeaveManagement.MVC.csproj",
       "packagesPath": "C:\\Users\\X280\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.MVC\\obj\\",
+      "outputPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

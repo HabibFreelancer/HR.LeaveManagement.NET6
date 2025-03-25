@@ -14,13 +14,13 @@ namespace HR.LeaveManagement.Api.Controllers
         {
             _authenticationService = authenticationService;
         }
-
+        //api/account/login
         [HttpPost("login")]
         public async Task<ActionResult<AuthResponse>> Login(AuthRequest request)
         {
             return Ok(await _authenticationService.Login(request));
         }
-
+        //api/account/register
         [HttpPost("register")]
         public async Task<ActionResult<RegistrationResponse>> Register(RegistrationRequest request)
         {

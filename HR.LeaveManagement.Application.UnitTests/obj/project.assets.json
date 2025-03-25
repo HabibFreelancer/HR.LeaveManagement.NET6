@@ -10229,9 +10229,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application.UnitTests\\HR.LeaveManagement.Application.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application.UnitTests\\HR.LeaveManagement.Application.UnitTests.csproj",
       "projectName": "HR.LeaveManagement.Application.UnitTests",
-      "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application.UnitTests\\HR.LeaveManagement.Application.UnitTests.csproj",
+      "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application.UnitTests\\HR.LeaveManagement.Application.UnitTests.csproj",
       "packagesPath": "C:\\Users\\X280\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
@@ -10254,8 +10254,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj": {
-              "projectPath": "C:\\Users\\X280\\Source\\Repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj"
+            "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj"
             }
           }
         }

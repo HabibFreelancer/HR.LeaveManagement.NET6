@@ -28,8 +28,8 @@ namespace HR.LeaveManagement.Identity.Services
             {
                 Email = employee.Email,
                 Id = employee.Id,
-                Firstname = employee.FirstName,
-                Lastname = employee.LastName
+                FirstName = employee.FirstName,
+                LastName = employee.LastName
             };
         }
 
@@ -39,8 +39,8 @@ namespace HR.LeaveManagement.Identity.Services
             return employees.Select(q => new Employee { 
                 Id = q.Id,
                 Email = q.Email,
-                Firstname = q.FirstName,
-                Lastname = q.LastName
+                FirstName = q.FirstName,
+                LastName = q.LastName
             }).ToList();
         }
     }
