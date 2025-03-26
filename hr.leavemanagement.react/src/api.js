@@ -16,11 +16,20 @@
 import axios from "axios";
 import { isTokenValid } from "./utils/tokenHelper";
 
+
+
 const api = axios.create({
+  baseURL: "https://localhost:7273/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
+})
+
+const authApi = axios.create({
   baseURL: "https://localhost:7273/api/account",
 });
 
-api.interceptors.request.use((config) => {
+authApi.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token && isTokenValid(token)) {
     config.headers.Authorization = `Bearer ${token}`;
@@ -28,7 +37,7 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-api.interceptors.response.use(
+authApi.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {

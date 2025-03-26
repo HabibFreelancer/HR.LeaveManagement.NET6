@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{933E49B5-6484-4213-B801-337BDB1D5B8C}|HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj|c:\\users\\x280\\source\\repos\\hr.leavemanagement.net6\\hr.leavemanagement.identity\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{933E49B5-6484-4213-B801-337BDB1D5B8C}|HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj|solutionrelative:hr.leavemanagement.identity\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB70F17E-7E24-4D9B-A82D-E3250F7C86D3}|HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj|c:\\users\\x280\\source\\repos\\hr.leavemanagement.net6\\hr.leavemanagement.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB70F17E-7E24-4D9B-A82D-E3250F7C86D3}|HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj|solutionrelative:hr.leavemanagement.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE70D4DC-A0BC-439D-9855-59F040047C44}|HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj|c:\\users\\x280\\source\\repos\\hr.leavemanagement.net6\\hr.leavemanagement.application\\models\\identity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE70D4DC-A0BC-439D-9855-59F040047C44}|HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj|solutionrelative:hr.leavemanagement.application\\models\\identity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB70F17E-7E24-4D9B-A82D-E3250F7C86D3}|HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj|c:\\users\\x280\\source\\repos\\hr.leavemanagement.net6\\hr.leavemanagement.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB70F17E-7E24-4D9B-A82D-E3250F7C86D3}|HR.LeaveManagement.API\\HR.LeaveManagement.API.csproj|solutionrelative:hr.leavemanagement.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{933E49B5-6484-4213-B801-337BDB1D5B8C}|HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj|c:\\users\\x280\\source\\repos\\hr.leavemanagement.net6\\hr.leavemanagement.identity\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{933E49B5-6484-4213-B801-337BDB1D5B8C}|HR.LeaveManagement.Identity\\HR.LeaveManagement.Identity.csproj|solutionrelative:hr.leavemanagement.identity\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\Models\\Identity\\Employee.cs",
+              "RelativeDocumentMoniker": "HR.LeaveManagement.Application\\Models\\Identity\\Employee.cs",
+              "ToolTip": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Application\\Models\\Identity\\Employee.cs",
+              "RelativeToolTip": "HR.LeaveManagement.Application\\Models\\Identity\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T03:27:03.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "HR.LeaveManagement.API\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "HR.LeaveManagement.API\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T03:25:03.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "HR.LeaveManagement.API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "HR.LeaveManagement.API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T03:23:35.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "HR.LeaveManagement.Identity\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\Services\\UserService.cs",
+              "RelativeToolTip": "HR.LeaveManagement.Identity\\Services\\UserService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T02:54:43.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "HR.LeaveManagement.Identity\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\X280\\source\\repos\\HR.LeaveManagement.NET6\\HR.LeaveManagement.Identity\\Services\\AuthService.cs",
+              "RelativeToolTip": "HR.LeaveManagement.Identity\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T02:54:38.224Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
