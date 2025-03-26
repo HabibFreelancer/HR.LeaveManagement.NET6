@@ -3,3 +3,4 @@ C:\Users\X280\source\repos\HR.LeaveManagement.NET6\HR.LeaveManagement.MVC\obj\De
 C:\Users\X280\source\repos\HR.LeaveManagement.NET6\HR.LeaveManagement.MVC\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\X280\source\repos\HR.LeaveManagement.NET6\HR.LeaveManagement.MVC\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\X280\source\repos\HR.LeaveManagement.NET6\HR.LeaveManagement.MVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\X280\source\repos\HR.LeaveManagement.NET6\HR.LeaveManagement.MVC\obj\Debug\net6.0\staticwebassets.build.json

@@ -1,14 +1,4 @@
-// src/api.js
-// import axios from "axios";
 
-// const api = axios.create({
-//   baseURL: "https://localhost:7273/api/account", // change to your API base URL
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-// });
-
-// export default api;
 
 
 
